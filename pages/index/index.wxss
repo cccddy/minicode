@@ -1,0 +1,30 @@
+/**index.wxss**/
+.weather {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.weather_info {
+  color: #666;
+}
+
+.temperature {
+  color: rgb(247, 163, 8);
+}
+
+.fengli {
+  color: #666;
+}
+
+.weather_image {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  margin: 10px;
+  width: 200px
+  }

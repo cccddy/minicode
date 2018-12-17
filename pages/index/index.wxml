@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="weather">
+    <text class="weather_info">北京市 大兴区</text>
+    <text class="temperature">温度：-8℃</text>
+    <text class="fengli">风力：3～4级</text>
+
+  </view>
+  <view class="weather_image">
+    <text>看下面！</text>
+    <image class="image_ex1" src="cdy.png" mode='scaleToFill'></image> 
+    <button class="image_btn1" type='primary'>primary</button>
+    
+  </view>
+</view>
