@@ -1,30 +1,68 @@
 /**index.wxss**/
-.weather {
+page {
+  overflow:hidden; /**当内容超出元素框时隐藏超出部分**/ 
+  position:fixed; /**定位方式为绝对定位**/ 
+  background-image:url('http://5b0988e595225.cdn.sohucs.com/images/20171106/d1aacdc1cea9446a8c4f2ea2fc45c800.jpeg');/**背景图片**/
+  margin: 0px;
+}
+/**字体设置**/ /**字体颜色**/
+.w{color: white;} /**字体粗细**/
+.b{font-weight: normal;} /**字体大小**/
+.f40{font-size: 35rpx;}
+ /**边界线**/ 
+.l{
+  border: 1rpx solid rgb(240, 212, 212);
+}
+/**对齐方式，中间，左，右，两端**/ 
+.center{text-align: center;} 
+.left{text-align:left;} 
+.right{text-align:right;} 
+.justify{text-align:justify;}
+/**特定格式**/
+.road{height: 80rpx;}
+/**地址设置**/
+.date{
+  margin:30rpx 30rpx; 
+  font-size:45rpx;
+}
+/**日期设置**/ 
+.temp{
+  margin:30rpx 30rpx;
+  font-size: 80rpx;
+}
+/**今日温度设置**/
+/**容器布局**/
+.container {
+  position: absolute;/**绝对布局**/ 
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0;/**内边距**/
+  margin: 0;/**外边距**/
+  height: 700rpx;
+  display: block; /**块级元素**/
+}
+.hor{display: flex;}
+.nowWeather{padding: 60rpx;} 
+.weahterDetail{
+  margin: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;/**主轴为横轴，项目左右排列**/
+  justify-content: space-around;/**项目在主轴上的对齐方式,项目两侧间隔相等**/
+  bottom: 100rpx;
 }
 
-.weather_info {
-  color: #666;
+.forcast{
+  margin-top: 8%;
+  margin-left: 4%;
+  margin-right: 4%;
+  justify-content: space-around;/**项目在主轴上的对齐方式,项目两侧间隔相等**/
+} 
+
+.img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top:2%;
+  margin-left:2%;
 }
-
-.temperature {
-  color: rgb(247, 163, 8);
-}
-
-.fengli {
-  color: #666;
-}
-
-.weather_image {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-button{
-  margin: 10px;
-  width: 200px
-  }
